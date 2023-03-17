@@ -1,0 +1,82 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+main {
+    background-image: url("slottetsommar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+    
+    background-position: center;
+    background-color: rgb(63, 7, 7);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+header {
+    background-color: rgb(255, 255, 255);
+    color: rgb(121, 11, 11);
+    padding: 20px;
+}
+h1 {
+    margin: 0;
+}
+main {
+    padding: 20px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  nav a:hover {
+    background-color: #6b0606;
+    color: #fff;
+  }
+  
+  nav a[href^="mailto:"]::before {
+    content: "\f003";
+    font-family: FontAwesome;
+    margin-right: 5px;
+  }
+#press {
+	background-color: rgba(139, 0, 0, 0.7);
+	padding: 20px;
+	color: white;
+    float: left;
+	width: 50%;
+
+}

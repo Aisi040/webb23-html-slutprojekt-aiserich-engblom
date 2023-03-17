@@ -1,0 +1,71 @@
+
+body {
+    background-image: url("bakmeny.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  nav ul {
+    display:inline-flex;
+    list-style: none;
+    
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: rgb(242, 8, 8);
+    text-decoration: none;
+    
+    padding: 30px;
+    border-radius: 5px;
+  }
+  
+  
+  nav a:hover {
+    color: red;
+    text-decoration:double;
+  }
+  
+  
+  nav a.active {
+    background-color: black;
+    color: white;
+  }
+  
+  main {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: black; }

@@ -1,0 +1,78 @@
+/* Mörkt tema */
+@media (prefers-color-scheme: dark) {
+    /* Bakgrundsfärg och textfärg för hela dokumentet */
+    body {
+      background-color: #191818;
+      color: #4d2c2c;
+    }
+    section {
+        background-color: #191818;
+      }
+    }
+    @media (prefers-color-scheme: dark) {
+        div.project-description {
+          background-color: #191818;
+        }
+      }
+  
+    /* Stilmall för bilder */
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      max-height: 250px;
+      border-radius: 20px;
+      transition: transform 0.5s ease;
+    }
+  
+    /* När muspekaren svävar över bilden */
+    .image-container img:hover {
+      transform: scale(1.3);
+      filter: brightness(85%) sepia(60%) hue-rotate(10deg) saturate(120%);
+      position: relative;
+    }
+  
+    /* Skapa ett lager ovanpå bilden */
+    .image-container img:hover::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(250, 128, 114, 0.5);
+      border-radius: 20px;
+      z-index: -1;
+    }
+  
+    /* Färg för länkar inom kontaktinformationen */
+    .contact-item a {
+      color: #360606;
+    }
+  
+    /* Stilmall för sektionen Kontakt */
+    .contact {
+      background-color: #191818;
+      color: #4d2c2c;
+    }
+ /* Färg för länkar inom kontaktinformationen i mörkt tema */
+ .contact-info a {
+    color: #8d2424;
+  }
+  /*Färg på linkknappens text och hover*/
+  .project-description a {
+    color: #977c7c; 
+  }
+  .project-description a {
+    color: #261515; 
+  }
+  .project-description a:hover {
+    color: #5b2828; 
+  }
+  /*Bilderna i projekt blir mörkare*/
+  .project-images img {
+    filter: brightness(17%);
+  }
+  .project-images img:hover {
+    filter: brightness(58%);
+  }

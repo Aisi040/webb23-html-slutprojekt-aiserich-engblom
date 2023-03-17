@@ -1,0 +1,606 @@
+/* Variabler för färger och mellanrum */
+:root {
+  --main-color: #2196f3;
+  --secondary-color: #ff9800;
+  --dark-color: #333;
+  --light-color: #f4f4f4;
+  --spacing: 1rem;
+}
+
+/* General styles */
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* HEADER /
+/ Styling för huvudmenyn i sidhuvudet */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b16c6c;
+  color: #fff;
+  padding: var(--spacing);
+  }
+  
+  /* Styling för sidhuvudets h1-element */
+  header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: normal;
+  }
+  
+  /* Styling för länkarna i huvudmenyn */
+  nav a {
+  display: flex;
+  justify-content: space-between;
+  }
+  
+  /* Styling för länkarna i huvudmenyns lista */
+  .nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  /* Styling för varje länk i huvudmenyns lista */
+  .nav-links li {
+  margin-right: 20px;
+  }
+  
+  /* Styling för den sista länken i huvudmenyns lista */
+  .nav-links li:last-child {
+  margin-right: 0;
+  }
+  
+  /* Styling för länkarna i huvudmenyn */
+  .nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  }
+  
+  /* Styling för hovereffekten på länkarna i huvudmenyn */
+  .nav-links li a:hover {
+  color: rgb(133, 86, 86);
+  }
+  
+  /* Styling för hovereffekten på länkarna i huvudmenyns lista */
+  nav a:hover {
+  color: var(--secondary-color);
+  }
+  
+  /* Styling för dropdownmeny */
+  .dropdown {
+  position: relative;
+  }
+  
+  /* Styling för dropdownmenyns innehåll */
+  .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #b16c6c;
+  border: 2px solid #ccc;
+  padding: 10px;
+  }
+  
+  /* Visa dropdownmenyn när muspekaren förs över elementet */
+  .dropdown:hover .dropdown-menu {
+  display: block;
+  }
+  
+  /* Hamburgerfunktion för mobilmeny */
+  .menu {
+  display: none;
+  }
+  
+  /* Styling för hamburgare-ikonen */
+  .hamburger {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  }
+  
+  /* Styling för strecken i hamburgare-ikonen */
+  .line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  }
+
+/* visibility på nav när man klickar på hamburgar menu*/
+.hamburger:hover .line {
+  background-color: #555;
+}
+
+
+.show-menu {
+  height: 100%;
+}
+
+.show-menu .menu {
+  display: block;
+}
+
+.show-menu .hamburger .line:nth-child(1) {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.show-menu .hamburger .line:nth-child(2) {
+  opacity: 0;
+}
+
+.show-menu .hamburger .line:nth-child(3) {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Media query för mindre screens */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-links.show-menu {
+    transform: translateX(0);
+  }
+
+  .menu {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .menu li a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .menu li a:hover {
+    color: #555;
+  }
+
+  /* Göm hamburger menu på större screens */
+  .hamburger {
+    display: none;
+  }
+}
+
+/*keyframes*/
+.box {
+  width: 80px;
+  height: 10px;
+  background-color: salmon;
+  position: relative;
+  animation: moveBox 4s infinite; /* Använder nyckelordsanimationen 'moveBox' på detta element med oändlig upprepning */
+}
+
+@keyframes moveBox {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 50%;
+    background-color: rgb(53, 5, 9);
+  }
+  100% {
+    left: 100%;
+    background-color: salmon
+  }
+}
+@keyframes zoom-in {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.5); }
+}
+.element-1 {
+  animation-name: zoom-in;
+  animation-duration: 3s;
+  animation-iteration-count: 1; /* Slutar efter 1a ggr */
+  animation-direction: alternate-reverse;
+}
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.element-2 {
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-iteration-count: 2; /* Slutar efter 2e ggr */
+  animation-timing-function: linear;
+}
+
+/* div projects*/ /* Introduktion */
+.intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* Bildkontainer */
+.image-container {
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+/* Bild */
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+/* Skalning av bild vid hover */
+.image-container img:hover {
+  transform: scale(1.5);
+  /* Introduktionstext */
+}
+.intro-text {
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 2px 2px 4px rgba(224, 42, 42, 0.4);
+  flex: 1 1 auto;
+}
+/* Rubrik */
+.intro-text h1 {
+  margin-top: 0;
+}
+/* Paragraf */
+.intro-text p {
+  margin-bottom: 0;
+}
+/* Projektcontainer */
+.projects-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+/* Projekt */
+.project {
+	width: calc(25% - 20px);
+	margin-bottom: 40px;
+	position: relative;
+	overflow: hidden;
+}
+/* Skalning av projektbild vid hover */
+.project:hover img {
+	transform: scale(1.1);
+}
+/* Projektbild */
+.project img {
+	width: 100%;
+	transition: transform 0.5s ease-in-out;
+}
+/* Projekt rubrik */
+.project h3 {
+	font-size: 24px;
+	margin-top: 20px;
+}
+/* Projekt paragraf */
+.project p {
+	margin-top: 10px;
+}
+/* Overlay för projekt */
+.project:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+/* Visa overlay vid hover */
+.project:hover:before {
+	opacity: 1;
+}
+/* Ändra färg på rubrik och paragraf vid hover */
+.project:hover h3, .project:hover p {
+	color: #fff;
+}
+/* Dölj paragraf och flytta upp länk vid hover */
+.project:hover p {
+	opacity: 0;
+	transform: translateY(-20px);
+	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+/* Visa länk vid hover och flytta upp länk */
+.project:hover a {
+	opacity: 1;
+	transform: translateY(-20px);
+	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+/* Projekt länk */
+.project a {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #fff;
+	color: #333;
+	border-radius: 30px;
+	text-decoration: none;
+	margin-top: 20px;
+	position: absolute;
+	bottom: -40px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+/* Kontakt */
+/* Styling för kontaktsidan */
+.contact {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+}
+/* Rubrik för kontaktsidan */
+.contact h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* Brödtext för kontaktsidan */
+.contact p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* Flexbox som håller alla kontaktuppgifter */
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+/* Flexitem som innehåller en enskild kontaktuppgift */
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+/* Icon för kontaktuppgift */
+.contact-item i {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #333;
+}
+/* Text för kontaktuppgift */
+.contact-item p {
+  font-size: 18px;
+  color: #333;
+}
+/* Länk för kontaktuppgift */
+.contact-item a {
+  color: #333;
+}
+/* Länk för kontaktuppgift med hover-effekt */
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+/* Ändrar fontstorleken på texten inuti .contact p elementet */
+@media screen and (max-width: 767px) {
+  .contact p {
+    font-size: 16px;
+  }
+  /* Ändrar layouten av .contact-info elementet */
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Ändrar marginalerna runt .contact-item elementet */
+  .contact-item {
+    margin: 10px 0;
+  }
+}
+/* Projektssektionen /
+/* Flex-container som håller alla projekt */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: var(--spacing);
+}
+/* Flex-container som håller projektbilder */
+.project-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+/* Stor projektbild */
+.big-image {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.big-image img {
+  max-width: 100%;
+  height: auto;
+}
+/* Små projektbilder */
+.small-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  flex-wrap: wrap;
+}
+/* Länkar som håller små projektbilder */
+.small-images a {
+  flex-basis: calc(33.33% - 10px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+/* Justering av sista länken i en rad av små projektbilder */
+.small-images a:last-child {
+  margin-right: 0;
+}
+
+.small-images img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hover-effekt på projektbilderna */
+.project-images img:hover {
+  filter: brightness(60%);
+}
+/* Styling av projektbilderna */
+.project-images img {
+  border: 5px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  transition: filter 0.3s ease-in-out;
+}
+/* Footer */
+/* Denna funktionen slutade funka plötsligt, så jag "lagade" footern i html sålänge, men insåg att det var skönare för ögat att låta footern "stå still" utan någon cool effekt, så jag lät det var men ville behålla detta för att visa dig*/
+footer {
+  background-color: #b16c6c;
+  color: #fff;
+  text-align: center;
+  padding: var(--spacing);
+}
+footer p {
+margin: 0;
+}
+.social-media-links a:hover {
+  color: #ff4500;
+  text-decoration: underline; 
+  transition: all 0.3s ease-in-out; 
+
+/* Keyframes */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Animerat element */
+.my-element {
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  /* Styles för mindre än 768px */
+  body {
+    font-size: 16px; /* Justerar textstorleken för mindre skärmar */
+  }
+  .container {
+    padding: 0.5rem; /* mindre padding för mindre screens */
+  }
+}
+/* Stilar för bilder i projektsektionen */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: var(--spacing);
+  }
+  
+  .project-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  }
+  
+  .big-image {
+  max-width: 100%;
+  margin-bottom: 20px;
+  }
+  
+  .big-image img {
+  max-width: 100%;
+  height: auto;
+  }
+  
+  .small-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  flex-wrap: wrap;
+  }
+  
+  .small-images a {
+  flex-basis: calc(50% - 10px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  }
+  
+  .small-images a:last-child {
+  margin-right: 0;
+  }
+  
+  /* Responsiv design för mindre skärmar */
+  @media only screen and (max-width: 480px) {
+  .big-image img {
+  max-width: 100%;
+  height: auto;
+  }
+  
+  .small-images a {
+  flex-basis: 100%;
+  margin-right: 0;
+  }
+  }
+  
+  
+  
+  
+  
+  
+
+
+
+
+

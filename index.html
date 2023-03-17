@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  beskrivande titel  -->
+    <title>Min portfölj</title>
+
+    <!-- Länka till en extern CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="darkmode.css" media="(prefers-color-scheme: dark)">
+	
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <!-- rubrik i menyn -->
+            <h1>Mitt portfolio</h1>
+            <ul class="nav-links"><!-- navigeringsmeny  -->
+                <!-- Länkar i menyn -->
+                <li><a href="http://127.0.0.1:5500/index.html#">Start</a></li>
+                <li><a href="information.html">Om mig</a></li>
+                <!-- dropdown meny för projekt sidor -->
+                <li class="dropdown">
+                    <a href="index.html">Projekt <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="projekt1.html">Projekt1</a></li>
+                        <li><a href="projekt2.html">Projekt2</a></li>
+                        <li><a href="projekt3.html">Projekt3</a></li>
+                        <li><a href="http://127.0.0.1:5500/projekt4.html">Projekt4</a></li>
+                    </ul>
+                </li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+             <!-- hamburger meny för mindre skärmar -->
+    <div class="hamburger">
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+	  </div>
+	  <ul class="menu">
+		<!-- Länkar i menyn -->
+		<li><a href="http://127.0.0.1:5500/index.html#">Start</a></li>
+		<li><a href="information.html">Om mig</a></li>
+		<!-- dropdown meny för projekt sidor -->
+		<li class="dropdown">
+		  <a href="index.html">Projekt <i class="fa fa-caret-down"></i></a>
+		  <ul class="dropdown-menu">
+			<li><a href="projekt1.html">Projekt1</a></li>
+			<li><a href="projekt2.html">Projekt2</a></li>
+			<li><a href="projekt3.html">Projekt3</a></li>
+			<li><a href="http://127.0.0.1:5500/projekt4.html">Projekt4</a></li>
+		  </ul>
+		</li>
+		<li><a href="kontakt.html">Kontakt</a></li>
+	  </ul>
+	</nav>
+  </header>
+    
+
+    <main>
+        <!-- intro sektion med presentation -->
+        <section class="intro">
+            <div class="container">
+                <div class="row">
+                    <!--  Bootstrap för att dela upp innehållet i två kolumner -->
+                    <div class="col-md-4"> <!--Vet att den är tom, men gjort det med meningen-->
+                        <!-- Lägg till innehåll i vänster kolumn -->
+                    </div>
+                    <div class="col-md-8">
+                        <!-- Lägg till innehåll i höger kolumn -->
+                        <div class="intro-text">
+                            <div class="image-container">
+                                
+                                <img src="projekt\Aisi.jpg" alt="<Jag>" class="img-fluid">
+                            </div>
+							
+						</div><h1>Hej, jag heter Aiserich</h1>
+							<div class="box"></div>
+							<p>Mitt namn är Aiserich, kallas Aisi och jag är en nybörjare inom kodning. Jag fokuserar mig just nu på att utveckla mina kunskaper inom HTML och CSS. Framöver planerar jag att även lära mig Javascript för att på sikt bli en expert inom webbutveckling.
+
+								Jag strävar alltid efter att förbättra mina färdigheter och jag är stolt över att se hur långt jag har kommit från mitt första projekt till mitt senaste. Genom att följa mina projekt kommer du att märka den stora skillnaden och min ökade erfarenhet inom kodning. Mitt mål är att skapa ett imponerande portfolio som visar upp mina färdigheter och prestationer.
+								
+								Jag ser fram emot att fortsätta utveckla mina kunskaper inom kodning och jag hoppas att du kommer att följa min resa med mig.</p>
+							<a href="kontakt.html" class="cta-button">Kontakta mig</a>
+							<div class="box"></div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+			<!-- Galleri med projekt -->
+			<section class="gallery">
+				<div class="projects-container">
+					<div class="project">
+						<a href="projekt1.html"><img src="projekt\Hundar\3 Westies.jpg" alt="Projekt 1"></a>
+						<h3>Projekt 1</h3>
+						<p>HTMLsida med grundläggande HTML-element såsom rubriker och stycken.</p>
+					</div>
+					<div class="project">
+						<a href="projekt2.html"><img src="projekt\proj2.2.jpg" alt="Projekt 2"></a>
+						<h3>Projekt 2</h3>
+						<p>HTML-sida som innehåller ett formulär.</p>
+					</div>
+					<div class="project">
+						<a href="projekt3.html"><img src="projekt\Projekt3\webb23-html-mp1-aisi-engblom\asian-women.webp" alt="Projekt 3"></a>
+						<h3>Projekt 3</h3>
+						<p>Jag har skapat en personlig 'Inspirationssida', för att få till det har jag använt mig av flera olika element, inklusive en flexbox.</p>
+					</div>
+					<div class="project">
+						<a href="projekt4.html"><img src="projekt\Anitapaborringekloster\Logga.jpg" alt="Projekt 4"></a>
+						<h3>Projekt 4</h3>
+						<p>Jag har skapat en webbsida för en restaurang som jag ville förbättra med hjälp av HTML och CSS.</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!---footer--->
+		
+<footer style="background-color: #b16c6c; color: #fff; text-align: center; padding: var(--spacing);"> <!---Min footer bara försvann och ville inte länka med css därav detta-->
+	<p>&copy; 2023 Mitt portfolio</p>
+	<div class="social-media-links">
+	  <a href="https://www.facebook.com/aisi.engblom"target="_blank" style="color: #fff; text-decoration: none; transition: all 0.3s ease-in-out;">Facebook</a>
+	  <a href="https://www.instagram.com/aisi/"target="_blank" style="color: #fff; text-decoration: none; transition: all 0.3s ease-in-out;">Instagram</a>
+	</div>
+  </footer>
+
+		
+
+</body>
+</html>

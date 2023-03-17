@@ -1,0 +1,189 @@
+
+header {
+ 
+  background-color:rgb(255, 255, 255);
+  text-align: center;
+  padding: auto;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.navbar {
+  padding: 1em;
+  background-color: #fff;
+  border-top: 1px solid rgb(118, 3, 66);
+}
+
+.navbar a {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 1px solid #999;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #eee;
+  text-decoration: underline;
+}
+
+
+
+
+
+.container {
+  display: flex;
+}
+
+.item {
+  height: 100px;
+  width: 100px; 
+  background-color: rgb(239, 128, 138);
+  border: 4px dotted salmon ;
+    width: 60%;
+    margin: auto;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    border: 4px dashed salmon ;
+    
+    padding: 5px;
+    
+}
+
+.item-center { 
+  flex-grow: 1; /* Set the middle element to grow and stretch */
+}
+
+.item + .item { 
+  margin-left: 2%; 
+}
+
+div#sida2 {
+
+  text-align: center;
+}
+
+
+
+div#all {
+  border-radius: 1cm; 
+  justify-content: ;
+  text-align:center;
+  background-color: salmon;
+}
+
+
+
+
+
+
+
+
+
+
+  div#ett {
+
+    background-color: salmon;
+   text-align: center;
+    
+    flex-direction: column;
+justify-content: space-around;
+      
+     padding: 1cm;
+    
+    
+    
+    
+   
+     
+      max-width: 100%;
+      
+      
+      border-radius: 5px;
+    
+   width: 100%;
+  
+
+   
+    gap: 7px;rem;
+    border: 4px dotted rgb(239, 32, 9) ;
+  }
+
+
+
+
+
+
+  div#överskrift {
+
+    margin: auto;
+    
+    text-align: center;
+    background-color: rgb(239, 128, 138);
+    width: 70%;
+   
+   
+    border-radius: 10px;
+    border: 4px dashed salmon ;
+    
+    padding: 5px;
+    
+  }
+    
+  .city {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+  } 
+  .contact-form {
+    width: 400px;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+
+  .contact-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .contact-form input[type="submit"]:hover {
+    background-color: #0062cc;
+  }

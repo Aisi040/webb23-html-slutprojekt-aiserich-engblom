@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!--  beskrivande titel  -->
+ <title>Projekt2</title>
+ <!-- Länka till en extern CSS -->
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="stylesheet" type="text/css" href="darkmode.css" media="(prefers-color-scheme: dark)">
+</head>
+<body>
+      <!-- navigeringsmeny  -->
+	  <header>
+        <nav>
+            <!-- rubrik i menyn -->
+            <h1>Mitt portfolio</h1>
+            <ul class="nav-links">
+                <!-- Länkar i menyn -->
+                <li><a href="http://127.0.0.1:5500/index.html#">Start</a></li>
+                <li><a href="information.html">Om mig</a></li>
+                <!-- dropdown meny för projekt sidor -->
+                <li class="dropdown">
+                    <a href="index.html">Projekt <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="projekt1.html">Projekt1</a></li>
+                        <li><a href="projekt2.html">Projekt2</a></li>
+                        <li><a href="projekt3.html">Projekt3</a></li>
+                        <li><a href="http://127.0.0.1:5500/projekt4.html">Projekt4</a></li>
+                    </ul>
+                </li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+             <!-- hamburger meny för mindre skärmar -->
+    <div class="hamburger">
+		<div class="line"></div>
+		<div class="line"></div>
+		<div class="line"></div>
+	  </div>
+	  <ul class="menu">
+		<!-- Länkar i menyn -->
+		<li><a href="http://127.0.0.1:5500/index.html#">Start</a></li>
+		<li><a href="information.html">Om mig</a></li>
+		<!-- dropdown meny för projekt sidor -->
+		<li class="dropdown">
+		  <a href="index.html">Projekt <i class="fa fa-caret-down"></i></a>
+		  <ul class="dropdown-menu">
+			<li><a href="projekt1.html">Projekt1</a></li>
+			<li><a href="projekt2.html">Projekt2</a></li>
+			<li><a href="projekt3.html">Projekt3</a></li>
+			<li><a href="http://127.0.0.1:5500/projekt4.html">Projekt4</a></li>
+		  </ul>
+		</li>
+		<li><a href="kontakt.html">Kontakt</a></li>
+	  </ul>
+	</nav>
+  </header>
+  <main>
+    <h1>Projekt Charterresa</h1>
+  
+    <section>
+      <h2>Mitt andra projekt</h2>
+      <div class="project-description">
+        <p>Detta är en HTML-sida som innehåller ett formulär för att boka en charterresa. Formuläret innehåller fält för att ange avrese- och ankomstdestinationer, samt datum för avresa och hemresa. Det finns också checkboxar för att välja specialkost och bagagealternativ. Till sist finns det en submit-knapp för att skicka in formuläret.</p>
+        <a href="projekt\Charterresa\index.html" target="_blank">Mitt andra projekt</a></div>
+    </section>
+
+    <section>
+      <h2>Bilder som ska inspirera en att fylla i formuläret</h2>
+      <div class="project-images">
+		<div class="project-images">
+			<div class="big-image">
+			  <a href="projekt\proj2.1.jpg" target="_blank"><img src="projekt\proj2.1.jpg" alt="Projekt X bild 2"></a>
+			</div>
+			<div class="small-images">
+			  <a href="projekt\proj2.3.jpg" target="_blank"><img src="projekt\proj2.3.jpg" alt="Projekt X bild 1"></a>
+			  <a href="projekt\proj2.4.jpg" target="_blank"><img src="projekt\proj2.4.jpg" alt="Projekt X bild 3"></a>
+			  <a href="projekt\proj2.2.jpg" target="_blank"><img src="projekt\proj2.2.jpg" alt="Projekt X"></a>
+			</div>
+		  </div>
+		</section>
+  </main>
+  
+
+  <footer style="background-color: #b16c6c; color: #fff; text-align: center; padding: var(--spacing);">
+	<p>&copy; 2023 Mitt portfolio</p>
+	<div class="social-media-links">
+	  <a href="https://www.facebook.com/aisi.engblom"target="_blank" style="color: #fff; text-decoration: none; transition: all 0.3s ease-in-out;">Facebook</a>
+	  <a href="https://www.instagram.com/aisi/"target="_blank" style="color: #fff; text-decoration: none; transition: all 0.3s ease-in-out;">Instagram</a>
+	</div>
+  </footer>
+
+		
+</body>
+</html>

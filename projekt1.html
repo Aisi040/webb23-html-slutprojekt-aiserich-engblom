@@ -56,29 +56,49 @@
 	</nav>
   </header>
   <main>
-    <h1>Projekt Hundar</h1>
-  
-    <section>
-      <h2>Beskrivning</h2>
-      <div class="project-description">
-        <p>Mitt första projekt var en enkel webbsida som jag skapade med HTML och CSS. Jag använde mig av grundläggande HTML-element såsom rubriker, stycken och stylade sidan med CSS. Syftet med projektet var att lära mig grunderna i webbutveckling och att få erfarenhet av att bygga en webbsida från grunden.</p>
-        <a href="http://127.0.0.1:5500/projekt/Hundar/index.html" class="button" target="_blank">Mitt första projekt</a></div>
-    </section>
-
+	<h1>Projekt Hundar</h1>
+	
 	<section>
-		<h2>Bilder tagna från mitt första projekt</h2>
-		<div class="project-images">
-		  <div class="big-image">
-			<a href="projekt\3 Westies.jpg" target="_blank"><img src="projekt\3 Westies.jpg" alt="Projekt X bild 2"></a>
-		  </div>
-		  <div class="small-images">
-			<a href="projekt\labrador1.jpg" target="_blank"><img src="projekt\labrador1.jpg" alt="Projekt X bild 1"></a>
-			<a href="projekt\West Highland White Terrier3.jpeg" target="_blank"><img src="projekt\West Highland White Terrier3.jpeg" alt="Projekt X bild 3"></a>
-			<a href="projekt\tillsammans.jpg" target="_blank"><img src="projekt\tillsammans.jpg" alt="Projekt X"></a>
-		  </div>
+	  <h2>Beskrivning</h2>
+	  <div class="project-description">
+		<p>Mitt första projekt var en enkel webbsida som jag skapade med HTML och CSS. Jag använde mig av grundläggande HTML-element såsom rubriker, stycken och stylade sidan med CSS. Syftet med projektet var att lära mig grunderna i webbutveckling och att få erfarenhet av att bygga en webbsida från grunden.</p>
+		<a href="http://127.0.0.1:5500/projekt/Hundar/index.html" class="button" target="_blank">Mitt första projekt</a>
+	  </div>
+	</section>
+  
+	<section>
+	  <h2>Bilder tagna från mitt första projekt</h2>
+	  <div class="project-images">
+		<div class="big-image">
+		  <a href="projekt\3 Westies.jpg" target="_blank">
+			<picture>
+			  <source media="(min-width: 800px)" srcset="projekt\3 Westies.jpg">
+			  <img src="projekt\3 Westies.jpg" alt="Projekt X bild 2">
+			</picture>
+		  </a>
 		</div>
-	  </section>
-	  
+		<div class="small-images">
+		  <a href="projekt\labrador1.jpg" target="_blank">
+			<picture>
+			  <source media="(min-width: 800px)" srcset="projekt\labrador1.jpg">
+			  <img src="projekt\labrador1.jpg" alt="Projekt X bild 1">
+			</picture>
+		  </a>
+		  <a href="projekt\West Highland White Terrier3.jpeg" target="_blank">
+			<picture>
+			  <source media="(min-width: 800px)" srcset="projekt\West Highland White Terrier3.jpeg">
+			  <img src="projekt\West Highland White Terrier3.jpeg" alt="Projekt X bild 3">
+			</picture>
+		  </a>
+		  <a href="projekt\tillsammans.jpg" target="_blank">
+			<picture>
+			  <source media="(min-width: 800px)" srcset="projekt\tillsammans.jpg">
+			  <img src="projekt\tillsammans.jpg" alt="Projekt X">
+			</picture>
+		  </a>
+		</div>
+	  </div>
+	</section>
   </main>
 
   <footer style="background-color: #b16c6c; color: #fff; text-align: center; padding: var(--spacing);">

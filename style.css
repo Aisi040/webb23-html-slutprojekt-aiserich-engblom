@@ -573,6 +573,7 @@ margin: 0;
   align-items: center;
   max-width: 100%;
   margin: 0 auto;
+    height: auto;
   }
   
   .big-image {
@@ -604,7 +605,7 @@ margin: 0;
   }
   
   /* Responsiv design för mindre skärmar */
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 375px) {
   .big-image img {
   max-width: 100%;
   height: auto;

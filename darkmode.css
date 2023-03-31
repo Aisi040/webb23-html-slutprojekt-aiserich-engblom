@@ -3,10 +3,11 @@
     /* Bakgrundsfärg och textfärg för hela dokumentet */
     body {
       background-color: #191818;
-      color: #4d2c2c;
+      color: #d4a6a6;
     }
     section {
         background-color: #191818;
+        color: #904343;
       }
     }
    

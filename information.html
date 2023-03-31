@@ -10,6 +10,8 @@
 	 <!-- Länka till en extern CSS -->
 	 <link rel="stylesheet" type="text/css" href="style.css">
 	 <link rel="stylesheet" type="text/css" href="darkmode.css" media="(prefers-color-scheme: dark)">
+	 <!--Bootstrap-->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 	    <!-- navigeringsmeny  -->
@@ -59,27 +61,35 @@
 	  </header>
 
 	  <main>
-		<section class="about">
-		  <div class="container">
-			<h2>Om mig</h2>
-			<div class="image-container">
-			  <picture>
-				<source srcset="projekt\Aisi6.jpg" type="image/jpeg">
-				<img src="projekt\Aisi6.jpg" alt="Aiserich">
-			  </picture>
+		<section class="about py-5">
+			<div class="container">
+			  <div class="row">
+				<div class="col-md-6">
+				  <h2>Om mig</h2>
+				  <p>Mitt namn är Aiserich, men jag kallas oftast Aisi. Jag är en 35-årig kvinna bosatt i staden Bara tillsammans med min man och våra två barn, Sienna och Cleo.
+				  
+				  Efter flera års arbete inom handelsbranschen utbildade jag mig inom rehabilitering och fick möjlighet att arbeta som behandlingspedagog. Detta gav mig insikt om min passion för pedagogik och hjälpte mig att utveckla mina färdigheter i att hjälpa barn att nå sin fulla potential. Efter noggranna överväganden har jag nu beslutat mig för att ta min karriär i en ny riktning och lära mig programmering.
+				  
+				  Jag har alltid fascinerats av teknik och dess förmåga att lösa problem, och jag är övertygad om att min bakgrund inom handelsbranchen, service och pedagogik kommer att vara till nytta för mig i denna nya utmaning. Jag ser fram emot att utforska programmeringens värld och att utveckla mina färdigheter i detta spännande fält.</p>
+				</div>
+				<div class="col-md-6">
+				  <div class="image-container">
+					<img src="projekt\Aisi6.jpg" alt="Aiserich" class="img-fluid">
+				  </div>
+				</div>
+			  </div>
 			</div>
-			<p>Mitt namn är Aiserich, men jag kallas oftast Aisi. Jag är en 35-årig kvinna bosatt i staden Bara tillsammans med min man och våra två barn, Sienna och Cleo.
-		
-			  Efter flera års arbete inom handelsbranschen utbildade jag mig inom rehabilitering och fick möjlighet att arbeta som behandlingspedagog. Detta gav mig insikt om min passion för pedagogik och hjälpte mig att utveckla mina färdigheter i att hjälpa barn att nå sin fulla potential. Efter noggranna överväganden har jag nu beslutat mig för att ta min karriär i en ny riktning och lära mig programmering.
-		
-			  Jag har alltid fascinerats av teknik och dess förmåga att lösa problem, och jag är övertygad om att min bakgrund inom handelsbranchen, service och pedagogik kommer att vara till nytta för mig i denna nya utmaning. Jag ser fram emot att utforska programmeringens värld och att utveckla mina färdigheter i detta spännande fält.</p>
+		  </section>
+		  
+		  <div class="container">
+			<div class="row">
+			  <div class="col-md-6">
+				<div class="element-1">Vänliga hälsningar,</div>
+				<div class="element-2">Aiserich Engblom</div>
+			  </div>
+			</div>
 		  </div>
-		</section>
-	  </main>
-		  <div class="element-1">Vänliga hälsningar,</div>
-  <div class="element-2">Aiserich Engblom</div>
-		</section>
-	  </main>
+
 		<!---footer--->
 		
 <footer style="background-color: #b16c6c; color: #fff; text-align: center; padding: var(--spacing);"> <!---Min footer bara försvann och ville inte länka med css därav detta-->

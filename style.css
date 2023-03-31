@@ -1,7 +1,7 @@
 /* Variabler för färger och mellanrum */
 :root {
-  --main-color: #2196f3;
-  --secondary-color: #ff9800;
+  --main-color: #c6ccd1;
+  --secondary-color: #e0d9ce;
   --dark-color: #333;
   --light-color: #f4f4f4;
   --spacing: 1rem;
@@ -64,7 +64,7 @@ header {
   /* Styling för länkarna i huvudmenyn */
   .nav-links li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #b74949;
   font-weight: bold;
   transition: all 0.3s ease;
   }

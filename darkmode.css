@@ -9,12 +9,7 @@
         background-color: #191818;
       }
     }
-    @media (prefers-color-scheme: dark) {
-        div.project-description {
-          background-color: #191818;
-        }
-      }
-  
+   
     /* Stilmall för bilder */
     .image-container img {
       max-width: 100%;
